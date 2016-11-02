@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Created by Crow on 02.11.2016.
- *
+ * Search for the min and max numbers.
  */
 
 class ArrayUtils {
