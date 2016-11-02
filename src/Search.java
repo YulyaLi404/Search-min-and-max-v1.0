@@ -19,7 +19,7 @@ public class Search extends ArrayUtils{
         
         String line = "-----------------------------------";
 
-        System.out.println("Search for the min and max numbers." + "\n" + line);
+        System.out.println("Search for the min and max numbers.\n" + line);
         
         try {
 
