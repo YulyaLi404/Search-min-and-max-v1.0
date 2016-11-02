@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * Created by Crow on 02.11.2016.
  * Search for the min and max numbers.
  */
-public class Search extends ArrayUtils{
+public class Search {
 
     public static void main(String[] args) throws IOException {
 
@@ -30,8 +30,8 @@ public class Search extends ArrayUtils{
 
         } catch (NumberFormatException ignored){}
 
-        int maximum = max(array);
-        int minimum = min(array);
+        int maximum = ArrayUtils.max(array);
+        int minimum = ArrayUtils.min(array);
 
         System.out.println(line + "\nMaximum: "+ maximum);
         System.out.println("Minimum: " + minimum);
