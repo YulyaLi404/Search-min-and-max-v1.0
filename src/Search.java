@@ -11,13 +11,13 @@ import java.util.ArrayList;
  */
 public class Search {
 
+    private static final String line = "-----------------------------------";
+    
     public static void main(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         ArrayList<Integer> array = new ArrayList<>();
-        
-        String line = "-----------------------------------";
 
         System.out.println("Search for the min and max numbers.\n" + line);
         
