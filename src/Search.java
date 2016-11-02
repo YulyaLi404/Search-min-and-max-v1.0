@@ -17,7 +17,11 @@ public class Search extends ArrayUtils{
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         ArrayList<Integer> array = new ArrayList<>();
+        
+        String line = "-----------------------------------";
 
+        System.out.println("Search for the min and max numbers." + "\n" + line);
+        
         try {
 
             for (int i = 0; i < 100; i++) {
@@ -30,6 +34,22 @@ public class Search extends ArrayUtils{
         int maximum = max(array);
         int minimum = min(array);
 
-        System.out.println("Maximum: "+ maximum + "\n" + "Minimum: " + minimum);
+        System.out.println(line +"\n" + "Maximum: "+ maximum + "\n" + "Minimum: " + minimum);
     }
 }
+
+/* Output:
+Search for the min and max numbers.
+-----------------------------------
+45666
+34555
+2334
+-234
+-2334
+0
+
+-----------------------------------
+Maximum: 45666
+Minimum: -2334
+
+*/
