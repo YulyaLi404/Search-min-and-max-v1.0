@@ -33,7 +33,8 @@ public class Search extends ArrayUtils{
         int maximum = max(array);
         int minimum = min(array);
 
-        System.out.println(line +"\n" + "Maximum: "+ maximum + "\n" + "Minimum: " + minimum);
+        System.out.println(line + "\nMaximum: "+ maximum);
+        System.out.println("Minimum: " + minimum);
     }
 }
 
