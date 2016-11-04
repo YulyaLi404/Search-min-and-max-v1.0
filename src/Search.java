@@ -35,6 +35,8 @@ public class Search {
 
         System.out.println(line + "\nMaximum: "+ maximum);
         System.out.println("Minimum: " + minimum);
+        
+        System.out.println(Arrays.toString(ArrayUtils.revers()));
     }
 }
 
@@ -51,5 +53,17 @@ Search for the min and max numbers.
 -----------------------------------
 Maximum: 45666
 Minimum: -2334
+
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 */
