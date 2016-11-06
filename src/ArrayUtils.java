@@ -61,4 +61,43 @@ class ArrayUtils {
    static int addition(int a, int b){
        return a + b;
    }
+    
+    static int max1(int[] array1) {
+
+        int max = array1[0];
+
+        for (int i = 0; i < array1.length; i++) {
+            if (max < array1[i]) {
+                max = array1[i];
+            }
+        }
+        /*  for (int anArray1 : array1) {
+            if (max < anArray1) {
+                max = anArray1;
+            }
+        } */
+
+        return max;
+    }
+
+    static int min1(int[] array2) {
+
+        int min = array2[0];
+
+        for (int i = 0; i < array2.length; i++) {
+
+            if (min > array2[i]) {
+                min = array2[i];
+            }
+        }
+
+        /*  for (int anArray2 : array2) {
+
+            if (min > anArray2) {
+                min = anArray2;
+            }
+        } */
+        
+        return min;
+    }
 }
