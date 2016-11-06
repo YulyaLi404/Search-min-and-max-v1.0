@@ -35,9 +35,10 @@ class ArrayUtils {
         return maximum;
     }
     
-    static int[] reverse(int[] num) {
-
-       for (int i = 0; num.length/2 > i; i++) {
+    // Вывод массива в обратном порядке
+    static int[] reverse(int[] num) { 
+        
+       for (int i = 0; num.length/2 > i; i++) { //меняем местами половины массива (/2)
            int tmp = num[i];
            num[i] = num[num.length - i - 1]; // если убрать эту строчку, то массив отобразит зеркально только первую часть массива.
            num[num.length - i - 1] = tmp; // если убрать эту строчку, то массив отобразит зеркально только вторую часть массива.
