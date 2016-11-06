@@ -43,12 +43,21 @@ public class Search {
         
         System.out.println(line + "\n" + "The output of the array in reverse order.");
         int[] arr = {1, 4, 0, 5, 4, 0, 5, 4};
+        
         arr = ArrayUtils.reverse(arr);
 
         System.out.println(line + "\n" + Arrays.toString(arr));
         
         System.out.println(line + "\n" + "Output of the array in reverse order 2.");
         System.out.println(line + "\n" + Arrays.toString(ArrayUtils.reverse2(arr)));
+        
+        System.out.println(line + "\nSearch for the min and max numbers 2.\n");
+
+        int max = ArrayUtils.max1(arr);
+        int min = ArrayUtils.min1(arr);
+
+        System.out.println("Maximum: " + max);
+        System.out.println("Minimum: " + min);
 
         System.out.println(line + "\n" + "The sum of the two numbers.");
         System.out.println("Enter 2 numbers: ");
@@ -82,6 +91,11 @@ Output of the array in reverse order.
 Output of the array in reverse order 2.
 -----------------------------------
 [4, 5, 0, 4, 5, 0, 4, 1]
+-----------------------------------
+Search for the min and max numbers 2.
+
+Maximum: 5
+Minimum: 0
 -----------------------------------
 The sum of the two numbers.
 -----------------------------------
