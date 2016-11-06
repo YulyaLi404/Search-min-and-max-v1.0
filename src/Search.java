@@ -4,10 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
+//import java.util.Collections;
 
 /**
  * Created by Crow on 02.11.2016.
- * Search for the min and max numbers.
+ * Search for the min and max numbers and etc.
  */
 public class Search {
 
@@ -33,9 +35,11 @@ public class Search {
 
         int maximum = ArrayUtils.max(array);
         int minimum = ArrayUtils.min(array);
+        // Collections.reverse(array);
 
         System.out.println(line + "\nMaximum: "+ maximum);
         System.out.println("Minimum: " + minimum);
+        // System.out.println(array);
         
         System.out.println(line + "\n" + "The output of the array in reverse order.");
         int[] arr = {1, 4, 0, 5, 4, 0, 5, 4};
