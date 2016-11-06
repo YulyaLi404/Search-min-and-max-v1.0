@@ -35,7 +35,7 @@ class ArrayUtils {
         return maximum;
     }
     
-    // Вывод массива в обратном порядке
+    // Вывод массива в обратном порядке - 1.
     static int[] reverse(int[] num) { 
         
        for (int i = 0; num.length/2 > i; i++) { //меняем местами половины массива (/2)
@@ -45,6 +45,16 @@ class ArrayUtils {
         }
         return num;
     }
+    
+    // Вывод массива в обратном порядке - 2.
+    static int[] reverse2 (int[] num){
+
+       for (int i = 1; i < num.length; i++){
+           int t = num[i];
+           num[i] = t;
+       }
+       return num;
+   }
     
      // Рассчитать и возратить сумму
    static int addition(int a, int b){
