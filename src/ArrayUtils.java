@@ -53,6 +53,7 @@ class ArrayUtils {
            int t = num[i];
            num[i] = t;
        }
+       //System.arraycopy(num, 1, num, 1, num.length - 1); - 'ide' идентично коду выше.
        return num;
    }
     
