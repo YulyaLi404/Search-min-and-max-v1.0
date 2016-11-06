@@ -35,13 +35,18 @@ class ArrayUtils {
         return maximum;
     }
     
-     static int[] revers() {
+    static int[] reverse(int[] num) {
 
-       int[] num = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9 , 10};
-
-       for (int i = num.length; i > 0; i--) {
-           System.out.println(i);
-       }
-       return num;
+       for (int i = 0; num.length/2 > i; i++) {
+           int tmp = num[i];
+           num[i] = num[num.length - i - 1]; // если убрать эту строчку, то массив отобразит зеркально только первую часть массива.
+           num[num.length - i - 1] = tmp; // если убрать эту строчку, то массив отобразит зеркально только вторую часть кода.
+        }
+        return num;
+    }
+    
+     // Рассчитать и возратить сумму
+   static int addition(int a, int b){
+       return a + b;
    }
 }
