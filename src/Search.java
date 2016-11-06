@@ -31,7 +31,7 @@ public class Search {
                 array.add(Integer.parseInt(reader.readLine()));
             }
 
-        } catch (NumberFormatException ignored){}
+        } catch (Exception ignored){}
 
         int maximum = ArrayUtils.max(array);
         int minimum = ArrayUtils.min(array);
